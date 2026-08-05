@@ -1,5 +1,6 @@
 # RETO I
-###Tienen un vaso A con jugo de naranja y un vaso B con
+
+Tienen un vaso A con jugo de naranja y un vaso B con
 agua (ambos a la mitad), y un tercer vaso C
 completamente vacío. Sin usar ningún recipiente
 adicional ni derramar nada, escriban la secuencia
@@ -8,6 +9,7 @@ agua y el vaso B tenga el jugo.
 
 
 # RETO II
+
 Apoyan la logística de una jornada de salud
 comunitaria. A partir de tres datos de cada paciente —
 (1) edad, (2) si tiene o no una condición de urgencia,
@@ -16,6 +18,7 @@ decisión ("si… entonces…" o diagrama de flujo) que
 determine su prioridad: Alta, Media o Baja.
 
 # RETO III
+
 Un integrante piensa en secreto un número entre 1 y
 100. Otro debe adivinarlo preguntando "¿es tal
 número?" y solo recibe "mayor", "menor" o "¡correcto!".
