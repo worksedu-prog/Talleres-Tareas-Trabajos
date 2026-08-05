@@ -1,0 +1,24 @@
+RETO I
+¡La abuela tiene horno nuevo! y ha planeado hacer una deliciosa torta de vainilla con relleno de crema y fresas.
+La receta dice que debe precalentar el horno a 350 grados Fahrenheit, pero su horno muestra la temperatura en grados Centígrados. 
+Ayúdale a la abuela a colocar la temperatura correcta. Crea un programa en C++ que convierta grados Fahrenheit a Celsius
+RETO II
+El centro de salud Famisalud, aplica vacunas a los bebes menores de un año y la dosis a aplicar depende del peso y la edad del bebé según la siguiente fórmula:
+dosisvacuna = (pesobebe + 10 / mesesbebe * 10) * 8
+Realice un programa en C++ que le permita a la enfermera, determinar con facilidad la dosis de la vacuna que se debe aplicar a un bebé.
+RETO III
+Investigue como se pueden generar números aleatorios en C++ random
+Se pretende construir un programa que simule el juego del carisellazo, teniendo en cuenta lo siguiente:
+Se debe simular el lanzamiento de una moneda
+El jugador puede elegir Cara o Sello antes que caiga la moneda
+El juego debe decirle si gana o pierde, gana cuando la moneda coincide con la elección del jugador.
+RETO IV
+Juego de Piedra, Papel o Tijera (C++)
+Reglas Básicas.
+Tijeras vencen a Papel
+Papel vence a Piedra
+Piedra vence a Tijeras
+Instrucciones del Ejercicio
+De acuerdo con la sintaxis estudiada en clase, realice lo siguiente:
+Desarrollo del juego: Cree un programa en C++ que simule el juego de Piedra, Papel o Tijera para un usuario que compite contra la computadora (la máquina).
+Evaluación de resultados: Determine el ganador y muestre en pantalla si ganó el usuario, si ganó la máquina o si ocurrió un empate.
