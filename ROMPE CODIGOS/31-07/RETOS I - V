@@ -22,3 +22,5 @@ Instrucciones del Ejercicio
 De acuerdo con la sintaxis estudiada en clase, realice lo siguiente:
 Desarrollo del juego: Cree un programa en C++ que simule el juego de Piedra, Papel o Tijera para un usuario que compite contra la computadora (la máquina).
 Evaluación de resultados: Determine el ganador y muestre en pantalla si ganó el usuario, si ganó la máquina o si ocurrió un empate.
+RETO V
+Diseñe una calculadora que dados dos numeros muestre el resultado de la suma, resta, multiplicacion, división, raiz cuadrada y potenciación.
