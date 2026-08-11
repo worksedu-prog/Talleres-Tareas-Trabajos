@@ -22,5 +22,29 @@ Instrucciones del Ejercicio
 De acuerdo con la sintaxis estudiada en clase, realice lo siguiente:
 Desarrollo del juego: Cree un programa en C++ que simule el juego de Piedra, Papel o Tijera para un usuario que compite contra la computadora (la máquina).
 Evaluación de resultados: Determine el ganador y muestre en pantalla si ganó el usuario, si ganó la máquina o si ocurrió un empate.
-RETO V
+RETO V.I
 Diseñe una calculadora que dados dos numeros muestre el resultado de la suma, resta, multiplicacion, división, raiz cuadrada y potenciación.
+RETO V.II
+En Supermercados Noé estamos de aniversario y te obsequiamos un descuento en el valor de tu compra, si ésta es mayor a 50.000 y dependiendo de tu suerte:
+☐ Si sacas la bolita roja obtienes 10% en el valor de tu compra
+☐ Si sacas la bolita azul obtienes un 30% en el valor de tu compra
+☐ Si sacas la bolita amarilla obtienes un 50% en el valor de tu compra
+☐ Si sacas la bolita blanca te llevas tu compra gratis
+Permítale a un cliente del supermercado Noé saber si su compra ha sido beneficiada con su promoción de aniversario, indique acorde a la bolita obtenida de forma aleatoria qué valor de descuento ha ganado y cual sería su valor final a pagar.
+RETO VI
+Una tienda necesita un programa que calcule el valor a pagar por la compra de varios productos.
+El programa debe:
+Solicitar al usuario cuántos productos va a comprar.
+Utilizar un ciclo para registrar cada producto:
+Nombre del producto.
+Precio unitario.
+Cantidad comprada.
+Calcular el subtotal de cada producto.
+Acumular el valor total de la compra.
+Al finalizar: Si el total supera los $300.000, aplicar un descuento del 10%. Si el total está entre $150.000 y $300.000, aplicar un descuento del 5%.
+En cualquier otro caso, no aplicar descuento.
+Mostrar:
+Total antes del descuento.
+Descuento aplicado.
+Total a pagar.
+
