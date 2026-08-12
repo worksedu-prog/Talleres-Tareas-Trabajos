@@ -1,1 +1,39 @@
+#include <iostream>
+#include <vector>
+#include <numeric>   // Para accumulate
+#include <algorithm> // Para max_element y min_element
 
+using namespace std;
+
+int main() {
+    // 1. Crear el vector con multiples números enteros (edades)
+    vector<int> edades = {19, 22, 25, 21, 20, 23, 24};
+
+    // Validar que el vector no esté vacío
+    if (edades.empty()) {
+        cout << "El vector de edades está vacío." << endl;
+        return 0;
+    }
+
+    //Calcular la suma para obtener el promedio
+    double suma = accumulate(edades.begin(), edades.end(), 0.0);
+    double promedio = suma / edades.size();
+
+    // 3. Encontrar la edad mayor y la edad menor
+    int edad_mayor = *max_element(edades.begin(), edades.end());
+    int edad_menor = *min_element(edades.begin(), edades.end());
+
+    //Mostrar los resultados
+    cout << " Análisis de Edades " << endl;
+    cout << "Edades analizadas: ";
+    for (int edad : edades) {
+        cout << edad << " ";
+    }
+    cout << endl;
+
+    cout << "Edad promedio: " << promedio << endl;
+    cout << "Edad mayor: " << edad_mayor << endl;
+    cout << "Edad menor: " << edad_menor << endl;
+
+    return 0;
+}
