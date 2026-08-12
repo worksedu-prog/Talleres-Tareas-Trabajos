@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    // 1. Crear el vector con multiples números enteros (edades)
+    //Crear el vector con multiples números enteros (edades)
     vector<int> edades = {19, 22, 25, 21, 20, 23, 24};
 
     // Validar que el vector no esté vacío
