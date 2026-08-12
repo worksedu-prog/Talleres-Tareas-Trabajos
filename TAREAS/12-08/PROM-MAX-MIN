@@ -1,0 +1,31 @@
+//Promedio, maximo y minimo de un vector con edades
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    vector<int> edades = {19, 22, 25, 21, 20, 23, 24};
+
+//Analiza si el vector esta vacio
+    if (edades.empty()) return 0;
+
+//Define variables
+    double suma = 0;
+    int edad_mayor = edades[0];
+    int edad_menor = edades[0];
+
+    cout << "Edades analizadas: ";
+    for (int edad : edades) {
+        cout << edad << " ";
+        suma += edad;
+        if (edad > edad_mayor) edad_mayor = edad;
+        if (edad < edad_menor) edad_menor = edad;
+    }
+
+    cout << "\nEdad promedio: " << suma / edades.size() << endl;
+    cout << "Edad mayor: " << edad_mayor << endl;
+    cout << "Edad menor: " << edad_menor << endl;
+
+    return 0;
+}
