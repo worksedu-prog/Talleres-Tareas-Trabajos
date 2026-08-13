@@ -1,0 +1,45 @@
+//RETO 1·El sensor mentiroso   [Básico]
+Contexto: Una estación de calidad del aire del barrio reporta lecturas cada hora, pero el sensor falla de vez en cuando y, 
+cuando falla, escribe el valor -999.
+Se pide: Calcular el promedio real de las lecturas ignorando las lecturas dañadas, e informar cuántas lecturas se descartaron. 
+Usar el arreglo {20, -999, 22, 24, -999, 26}.
+Pista: Necesitan dos contadores: uno para la suma y otro para cuántos datos válidos encontraron. No se puede dividir 
+entre el tamaño del arreglo.
+
+
+
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    vector<int> lecturas = {20, -999, 22, 24, -999, 26};
+
+    double suma_validos = 0;
+    int datos_validos = 0;
+    int datos_descartados = 0;
+
+    for (int lectura : lecturas) {
+        if (lectura == -999) {
+            datos_descartados++;
+        } else {
+            suma_validos += lectura;
+            datos_validos++;
+        }
+    }
+
+    cout << "=== ANÁLISIS DE CALIDAD DEL AIRE ===" << endl;
+    cout << "Lecturas descartadas: " << datos_descartados << endl;
+    cout << "Lecturas válidas encontradas: " << datos_validos << endl;
+
+    if (datos_validos > 0) {
+        double promedio = suma_validos / datos_validos;
+        cout << "Promedio real de lecturas: " << promedio << endl;
+    } else {
+        cout << "No hubo lecturas válidas para calcular el promedio." << endl;
+    }
+
+    return 0;
+}
