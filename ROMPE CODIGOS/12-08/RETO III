@@ -9,12 +9,12 @@ Pista: Dos índices que caminan en sentidos opuestos: uno desde el inicio y otro
 using namespace std;
 
 int main() {
-    // Código de inventario a probar
+    // Código a probar
     vector<int> codigo = {1, 2, 3, 2, 1};
 
-    // Apuntador al inicio (posición 0)
+    // Variable de inicio (posición 0)
     int inicio = 0; 
-    // Apuntador al final (última posición del vector)
+    // Variable del final (última posición del vector)
     int fin = codigo.size() - 1; 
 
     // Variable booleana que asume que es palíndromo hasta demostrar lo contrario
