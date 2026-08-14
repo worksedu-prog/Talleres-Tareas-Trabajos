@@ -1,5 +1,6 @@
 ##DECLARACIÓN DE UNA MATRIZ
 
+//Primero Fila, luego Columna
 int matriz[2][3] = {
     {1, 2, 3},
     {4, 5, 6}
