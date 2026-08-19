@@ -1,7 +1,7 @@
 //RETO I   
-Contexto: La Sala Knuth registra cuántas personas hay en cada franja horaria (6 franjas) de lunes a viernes (5 días). La coordinación quiere reorganizar los horarios de monitoría.
-Se pide: Construir la matriz y responder tres cosas: cuál fue la franja más congestionada de toda la semana (con su día y hora), qué día tuvo mayor ocupación total, y cuáles franjas estuvieron siempre por debajo de 5 personas.
-Pista: Para la franja más congestionada necesitan guardar no solo el máximo, sino también en qué fila y columna lo encontraron.
+//Contexto: La Sala Knuth registra cuántas personas hay en cada franja horaria (6 franjas) de lunes a viernes (5 días). La coordinación quiere reorganizar los horarios de monitoría.
+//Se pide: Construir la matriz y responder tres cosas: cuál fue la franja más congestionada de toda la semana (con su día y hora), qué día tuvo mayor ocupación total, y cuáles franjas estuvieron siempre por debajo de 5 personas.
+//Pista: Para la franja más congestionada necesitan guardar no solo el máximo, sino también en qué fila y columna lo encontraron.
 
 
 
