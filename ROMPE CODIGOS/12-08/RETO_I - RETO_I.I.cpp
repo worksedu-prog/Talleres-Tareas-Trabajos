@@ -1,10 +1,10 @@
 //RETO 1·El sensor mentiroso   [Básico]
-Contexto: Una estación de calidad del aire del barrio reporta lecturas cada hora, pero el sensor falla de vez en cuando y, 
-cuando falla, escribe el valor -999.
-Se pide: Calcular el promedio real de las lecturas ignorando las lecturas dañadas, e informar cuántas lecturas se descartaron. 
-Usar el arreglo {20, -999, 22, 24, -999, 26}.
-Pista: Necesitan dos contadores: uno para la suma y otro para cuántos datos válidos encontraron. No se puede dividir 
-entre el tamaño del arreglo.
+//Contexto: Una estación de calidad del aire del barrio reporta lecturas cada hora, pero el sensor falla de vez en cuando y, 
+//cuando falla, escribe el valor -999.
+//Se pide: Calcular el promedio real de las lecturas ignorando las lecturas dañadas, e informar cuántas lecturas se descartaron. 
+//Usar el arreglo {20, -999, 22, 24, -999, 26}.
+//Pista: Necesitan dos contadores: uno para la suma y otro para cuántos datos válidos encontraron. No se puede dividir 
+//entre el tamaño del arreglo.
 
 
 
