@@ -1,7 +1,7 @@
-RETO II  ·  La diagonal secreta   
-Contexto: Un sistema sencillo de verificación usa las diagonales de una matriz cuadrada como código de control.
-Se pide: Dada una matriz cuadrada, calcular la suma de la diagonal principal y la de la diagonal secundaria, y determinar si son iguales. Probar con {{1,2,3},{4,5,6},{7,8,9}}.
-Pista: La diagonal principal son las posiciones donde fila e índice coinciden. Para la secundaria, cuando la fila avanza la columna retrocede: piensen en n-1-i.
+//RETO II  ·  La diagonal secreta   
+//Contexto: Un sistema sencillo de verificación usa las diagonales de una matriz cuadrada como código de control.
+//Se pide: Dada una matriz cuadrada, calcular la suma de la diagonal principal y la de la diagonal secundaria, y determinar si son iguales. Probar con {{1,2,3},{4,5,6},{7,8,9}}.
+//Pista: La diagonal principal son las posiciones donde fila e índice coinciden. Para la secundaria, cuando la fila avanza la columna retrocede: piensen en n-1-i.
 
 
 #include <iostream>
