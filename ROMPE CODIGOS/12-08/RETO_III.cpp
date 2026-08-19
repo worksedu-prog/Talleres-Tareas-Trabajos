@@ -1,7 +1,7 @@
-RETO 3  ·  El espejo   
-Contexto: Los códigos de inventario de una biblioteca comunitaria son válidos solo si se leen igual al derecho y al revés.
-Se pide: Determinar si un arreglo de números es palíndromo, sin crear un segundo arreglo y sin usar funciones de reversa del lenguaje.
-Pista: Dos índices que caminan en sentidos opuestos: uno desde el inicio y otro desde el final. Se detienen cuando se cruzan.
+//RETO 3  ·  El espejo   
+//Contexto: Los códigos de inventario de una biblioteca comunitaria son válidos solo si se leen igual al derecho y al revés.
+//Se pide: Determinar si un arreglo de números es palíndromo, sin crear un segundo arreglo y sin usar funciones de reversa del lenguaje.
+//Pista: Dos índices que caminan en sentidos opuestos: uno desde el inicio y otro desde el final. Se detienen cuando se cruzan.
 
 #include <iostream>
 #include <vector>
