@@ -1,7 +1,7 @@
 //RETO 2 - La racha de lluvia
-Contexto: Se tiene el registro de un mes donde 1 significa que llovió y 0 que no. Un ingeniero ambiental necesita saber cuál fue el periodo más largo de días seguidos con lluvia.
-Se pide: Encontrar la longitud de la racha más larga de unos consecutivos en el arreglo {0,1,1,0,1,1,1,0,1}.
-Pista: Se resuelve con un solo recorrido y dos variables: la racha actual y la mejor racha vista hasta ahora. Cuando aparece un 0, la racha actual vuelve a cero.
+//Contexto: Se tiene el registro de un mes donde 1 significa que llovió y 0 que no. Un ingeniero ambiental necesita saber cuál fue el periodo más largo de días seguidos con lluvia.
+//Se pide: Encontrar la longitud de la racha más larga de unos consecutivos en el arreglo {0,1,1,0,1,1,1,0,1}.
+//Pista: Se resuelve con un solo recorrido y dos variables: la racha actual y la mejor racha vista hasta ahora. Cuando aparece un 0, la racha actual vuelve a cero.
 
 #include <iostream>
 #include <vector>
