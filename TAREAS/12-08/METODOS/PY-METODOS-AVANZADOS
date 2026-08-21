@@ -1,0 +1,73 @@
+MACHINE LEARNING
+
+1. Modelos de Machine Learning (scikit-learn / xgboost)
+
+Método,Propósito / Descripción
+"fit(X, y)"      #Entrena el modelo aprendiendo los parámetros a partir de los datos.
+predict(X)        #Genera predicciones para nuevos datos basándose en el entrenamiento.
+predict_proba(X)        #Retorna las probabilidades para cada clase (modelos de clasificación).
+transform(X)            #"Modifica los datos (ej. normalización, scaling) según lo aprendido en fit."
+fit_transform(X)        #Ejecuta fit y transform en un solo paso (optimizado para entrenamiento).
+"score(X, y)"            #"Retorna la métrica de evaluación por defecto (ej. R2 en regresión, accuracy en clasificación)."
+get_params() / set_params()     #Lee o actualiza los hiperparámetros del modelo.
+
+
+
+
+from sklearn.ensemble import RandomForestClassifier
+
+# Pipeline típico
+model = RandomForestClassifier()
+model.fit(X_train, y_train)
+
+probs = model.predict_proba(X_test)
+accuracy = model.score(X_test, y_test)
+
+
+
+
+
+
+2. Modelos de Validación y Serialización (Pydantic)
+Utilizados en frameworks modernos como FastAPI para definir, validar y transformar estructuración de datos.
+
+
+Método,Propósito / Descripción
+model_dump()      #Convierte el modelo en un diccionario de Python.
+model_dump_json()  #Serializa el modelo directamente a una cadena JSON.
+model_validate(obj)      #Crea una instancia del modelo validando los datos desde un diccionario.
+model_validate_json(json_data)      #Crea una instancia del modelo desde un string JSON raw.
+
+
+
+from pydantic import BaseModel
+
+class User(BaseModel):
+    id: int
+    name: str
+
+# Instanciación y serialización
+user = User.model_validate({"id": 1, "name": "Ana"})
+data_dict = user.model_dump()
+
+
+
+
+
+
+
+
+3. Modelos de Base de Datos y ORM (SQLAlchemy / Django ORM)
+Gestionan el ciclo de vida, persistencia y consulta de objetos de datos.
+
+
+
+
+
+Método / Operación      Propósito / Descripción
+filter() / filter_by()      #Aplica condiciones para consultar registros en la base de datos.
+all() / first()              #Retorna todos los registros resultantes o únicamente el primero.
+add() / add_all()            #Agrega uno o varios objetos a la sesión para su posterior inserción.
+commit()               #Guarda permanentemente las transacciones pendientes en la base de datos.
+rollback()            #Cancela las transacciones no guardadas en caso de error.
+
