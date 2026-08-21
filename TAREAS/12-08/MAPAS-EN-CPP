@@ -1,0 +1,37 @@
+En C++, los diccionarios se implementan con la librería <map> (o <unordered_map>)
+El tipo map<Clave, Valor> guarda los pares clave-valor ordenados automáticamente por la clave
+#include <iostream>
+#include <map>
+#include <string>
+
+using namespace std;
+
+int main() {
+    // Definición: las claves son string y los valores son int
+    map<string, int> edades;
+
+    // 1. Insertar elementos
+    edades["Ana"] = 25;
+    edades["Carlos"] = 30;
+    edades["Beatriz"] = 22;
+
+    // 2. Acceder o modificar un valor
+    cout << "La edad de Ana es: " << edades["Ana"] << endl;
+
+    // 3. Comprobar si una clave existe
+    string nombre = "Carlos";
+    if (edades.count(nombre) > 0) {
+        cout << nombre << " esta en el diccionario." << endl;
+    }
+
+    // 4. Recorrer el diccionario (se imprime ordenado por clave: Ana, Beatriz, Carlos)
+    cout << "\nLista completa:" << endl;
+    for (auto par : edades) {
+        cout << par.first << ": " << par.second << " anos" << endl;
+    }
+
+    // 5. Eliminar un elemento
+    edades.erase("Carlos");
+
+    return 0;
+}
