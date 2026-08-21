@@ -1,0 +1,69 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    int a = -15, b = 20;
+
+    // Conversión de entero a texto
+    string texto = to_string(a); 
+
+    // Operaciones matemáticas de <cmath>
+    int valorAbsoluto = abs(a);          // 15
+    int potencia = pow(2, 3);            // 8
+
+    // Operaciones con <algorithm>
+    int mayor = max(a, b);               // 20
+    int menor = min(a, b);               // -15
+
+    return 0;
+}
+
+
+
+
+STRING
+
+
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string s = "Estructuras";
+
+    // 1. Tamaño
+    int tamano = s.length();             // O usar s.size() -> 11
+
+    // 2. Consulta de estado
+    bool estaVacio = s.empty();          // false
+
+    // 3. Modificación
+    s.push_back('!');                    // Agrega al final: "Estructuras!"
+    s.pop_back();                        // Quita el último caracter
+    s.append(" De Datos");               // "Estructuras De Datos"
+
+    // 4. Subcadenas y Búsquedas
+    // substr(posicion_inicial, longitud)
+    string sub = s.substr(0, 11);        // "Estructuras"
+    
+    // find busca la posición de una subcadena
+    size_t pos = s.find("Datos");        // Retorna el índice donde inicia "Datos"
+    if (pos != string::npos) {
+        cout << "Encontrado en posicion: " << pos << endl;
+    }
+
+    // 5. Conversión de texto a entero
+    string numeroTexto = "456";
+    int entero = stoi(numeroTexto);      // stoi = String To Integer
+
+    // 6. Limpiar todo el string
+    s.clear(); 
+
+    return 0;
+}
