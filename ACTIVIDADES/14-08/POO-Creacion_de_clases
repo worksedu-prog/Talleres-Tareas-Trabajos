@@ -1,0 +1,58 @@
+class Usuario:
+    def __init__(self, nombre, documento, tiene_sancion=False):
+        # Atributos del usuario
+        self.nombre = nombre
+        self.documento = documento
+        self.tiene_sancion = tiene_sancion
+
+
+class Recurso:
+    def __init__(self, codigo, categoria, disponible=True):
+        # Atributos del recurso
+        self.codigo = codigo
+        self.categoria = categoria
+        self.disponible = disponible
+        
+        # Lista de espera para almacenar los usuarios que lo soliciten cuando esté ocupado
+        self.lista_espera = []
+
+
+class Prestamo:
+    def __init__(self, usuario, recurso, fecha_prestamo):
+        # Un préstamo relaciona al usuario, el recurso prestado y la fecha
+        self.usuario = usuario
+        self.recurso = recurso
+        self.fecha_prestamo = fecha_prestamo
+
+CPP
+
+#include <string>
+
+class Usuario {
+private:
+    // ATRIBUTOS: Privados para que nadie los altere
+    string nombre;
+    string documento;
+    bool tieneSancion;
+
+public:
+    // CONSTRUCTOR: Público para poder crear el usuario
+    Usuario(string nom, string doc, bool sancion) {
+        nombre = nom;
+        documento = doc;
+        tieneSancion = sancion;
+    }
+
+    // MÉTODOS: Públicos para consultar o modificar datos de forma controlada
+    string getNombre() {
+        return nombre;
+    }
+
+    bool getTieneSancion() {
+        return tieneSancion;
+    }
+
+    void aplicarSancion() {
+        tieneSancion = true;
+    }
+};
