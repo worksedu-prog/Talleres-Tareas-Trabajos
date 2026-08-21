@@ -1,0 +1,44 @@
+INT
+
+num = -42
+
+# 1. Métodos propios de la clase int
+bit_len = num.bit_length()            # Cantidad de bits necesarios para representarlo
+bytes_rep = (1024).to_bytes(2, 'big') # Convierte el int a una secuencia de bytes
+
+# 2. Funciones globales frecuentes sobre enteros
+val_abs = abs(num)                    # 42
+texto = str(num)                      # Convierte a texto: "-42"
+potencia = pow(2, 3)                  # 8
+
+
+
+
+STRING
+
+
+cadena = "  Hola Mundo  "
+
+# 1. Tamaño
+tamano = len(cadena)                  # 14
+
+# 2. Formato y mayúsculas/minúsculas
+print(cadena.lower())                 # "  hola mundo  "
+print(cadena.upper())                 # "  HOLA MUNDO  "
+print(cadena.title())                 # "  Hola Mundo  "
+
+# 3. Limpieza de espacios
+limpio = cadena.strip()               # Elimina espacios al inicio y final: "Hola Mundo"
+
+# 4. Reemplazo y partición
+nuevo = limpio.replace("Mundo", "Python") # "Hola Python"
+lista_palabras = limpio.split(" ")        # Divide por separador -> ["Hola", "Mundo"]
+
+# 5. Búsquedas y validaciones (retornan booleano)
+es_num = "123".isdigit()              # True
+empieza = limpio.startswith("Hola")    # True
+posicion = limpio.find("Mundo")        # Retorna índice (5) o -1 si no existe
+
+# 6. Conversión a entero
+entero = int("789")                   # 789
+
